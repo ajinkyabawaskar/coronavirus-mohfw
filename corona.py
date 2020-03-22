@@ -33,7 +33,6 @@ def getData():
         return 'Last Updated'
 
 while True:
-    getData()
-    print("OK " + time.ctime())
+    print(getData() + " " + time.ctime())
     time.sleep(300)
 
