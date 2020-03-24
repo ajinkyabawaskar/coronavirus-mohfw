@@ -5,6 +5,19 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143186517-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-143186517-2');
+	</script>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -136,7 +149,7 @@
 							<label class="input-group-text" for="chartTheme">Chart Theme</label>
 						</div>
 						<select class="custom-select" id="chartTheme" onchange="changeTheme()">
-							<option value="BootStrap" selected>Bootstrap</option> 
+							<option value="BootStrap" selected>Bootstrap</option>
 							<option value="light1">Light 1</option>
 							<option value="light2">Light 2</option>
 							<option value="dark1">Dark 1</option>
@@ -209,7 +222,7 @@
 	<footer class="footer bg-dark text-white fixed-bottom mt-auto py-2">
 		<div class="container">
 			<span class="opacity-2">Last Updated: <?php echo file_get_contents("lastUpdated.txt") ?> from mohfw.gov.in</span>
-			<span class="text-muted" style="float:right" ></span>
+			<span class="text-muted" style="float:right"></span>
 		</div>
 	</footer>
 
