@@ -5,9 +5,10 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143186517-2"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-71VFLEGLSF"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 
@@ -16,9 +17,8 @@
 		}
 		gtag('js', new Date());
 
-		gtag('config', 'UA-143186517-2');
+		gtag('config', 'G-71VFLEGLSF');
 	</script>
-
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -48,6 +48,18 @@
 			display: none;
 		}
 
+
+		.twitter-timeline {
+			height: 250px !important;
+			overflow: scroll;
+		}
+
+		.border {
+			border-radius: 10px;
+		}
+
+
+
 		@media (min-width: 576px) {}
 
 		/* Medium devices (tablets, 768px and up) */
@@ -76,6 +88,7 @@
 <body class="d-flex flex-column h-100">
 	<nav class="navbar navbar-dark bg-dark">
 		<a class="navbar-brand" href="#">Coronavirus Spread in India</a>
+
 	</nav>
 	<!-- Pass JSON to JS from Server -->
 	<div style="display: none" id="json">
@@ -173,12 +186,12 @@
 		<div class="container-fluid">
 			<div class="row my-4">
 				<div class="col-md-6 col-lg-5 ">
-					<div id="canvas" class="  mb-4" style="height: 50vh;"></div>
+					<div id="canvas" class="mb-2" style="height: 50vh;"></div>
 				</div>
 				<div class="col-md-6 col-lg-7 mb-4">
 					<div class="container-fluid mb-4">
 						<div class="row">
-							<div class="col-md-6 col-lg-6 mt-2">
+							<div class="col-md-6 col-lg-6 mt-4">
 								<div class="card shadow mb-2 bg-info text-white border-info">
 									<div class="card-body">
 										<h5 class="card-title display-4" id="indianCases">0</h5>
@@ -187,7 +200,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 col-lg-6 mt-2">
+							<div class="col-md-6 col-lg-6 mt-4">
 								<div class="card shadow-lg mb-2 bg-secondary text-white border-secondary">
 									<div class="card-body">
 										<h5 class="card-title display-4" id="foreignCases">0</h5>
@@ -196,7 +209,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 col-lg-6 mt-2">
+							<div class="col-md-6 col-lg-6 mt-4">
 								<div class="card shadow mb-2 bg-success text-white border-success">
 									<div class="card-body">
 										<h5 class="card-title display-4" id="cured">0</h5>
@@ -205,7 +218,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 col-lg-6 mt-2">
+							<div class="col-md-6 col-lg-6 mt-4">
 								<div class="card shadow mb-2 bg-danger text-white border-danger">
 									<div class="card-body">
 										<h5 class="card-title display-4" id="deaths">0</h5>
@@ -217,11 +230,58 @@
 						</div>
 					</div>
 				</div>
+				<div class="container-fluid mb-4">
+					<div class="row py-2">
+						<div class="my-2 mx-auto bg-success border">
+							<a class="btn my-1 btn-success" href="http://bit.ly/who-covid19-whatsapp">WhatsApp WHO</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="display-4 mb-2 ml-2" style="font-size: 2.5rem; font-weight: 300">
+							Updates from Twitter
+						</div>
+					</div>
+					<div class="row my-2 mb-4">
+						<div class="col-lg-4 col-md-6 col-sm-6 ">
+							<div class="stretch">
+								<div class="display-4 mt-2 mb-3" style="font-size: 1.2rem; font-weight: 400">
+									From Ministry of Health & Family Welfare
+								</div>
+								<div class="py-1 px-4 border border-primary">
+									<a class="twitter-timeline" href="https://twitter.com/MoHFW_INDIA" data-tweet-limit="1" data-width="399"></a>
+								</div>
+							</div>
+							<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+						<div class="col-lg-4 mol-md-6 col-sm-6">
+							<div class="stretch ">
+								<div class="display-4 mt-2 mb-3" style="font-size: 1.2rem; font-weight: 400">
+									From Press Trust of India
+								</div>
+								<div class="py-1 px-4 border border-primary ml-2">
+									<a class="twitter-timeline" href="https://twitter.com/PTI_News" data-tweet-limit="1" data-width="399"></a>
+								</div>
+							</div>
+							<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+						<div class="col-lg-4 mol-md-6 col-sm-6">
+							<div class="stretch ">
+								<div class="display-4 mt-2 mb-3" style="font-size: 1.2rem; font-weight: 400">
+									From Prime Minister of India
+								</div>
+								<div class="py-1 px-4 border border-primary ml-2">
+									<a class="twitter-timeline" href="https://twitter.com/narendramodi" data-tweet-limit="1" data-width="399"></a>
+								</div>
+							</div>
+							<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+					</div>
+				</div>
 	</main>
 
 	<footer class="footer bg-dark text-white fixed-bottom mt-auto py-2">
 		<div class="container">
-			<span class="opacity-2">Last Updated: <?php echo file_get_contents("lastUpdated.txt") ?> from mohfw.gov.in</span>
+			<span class="opacity-2"> Updated: <?php echo file_get_contents("lastUpdated.txt") ?></span>
 			<span class="text-muted" style="float:right"></span>
 		</div>
 	</footer>
