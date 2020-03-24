@@ -231,10 +231,17 @@
 					</div>
 				</div>
 				<div class="container-fluid mb-4">
-					<div class="row py-2">
-						<div class="my-2 mx-auto bg-success border">
-							<a class="btn my-1 btn-success" href="http://bit.ly/who-covid19-whatsapp">WhatsApp WHO</a>
+					<div class="row py-2 my-4">
+						<div class="col-lg-4 col-md-4 col-sm-4">
+
 						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<div class="my-2 mx-auto bg-success border text-center">
+							<a class="btn my-1 btn-success " href="http://bit.ly/who-covid19-whatsapp" style="font-size: 1.2rem">Subscribe WHO on
+							<img class="ml-1" src="https://static.whatsapp.net/rsrc.php/yv/r/-r3j-x8ZnM7.svg" alt="WhatsApp" width="125px"> </a>
+						</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4"></div>
 					</div>
 					<div class="row">
 						<div class="display-4 mb-2 ml-2" style="font-size: 2.5rem; font-weight: 300">
